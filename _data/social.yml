@@ -1,16 +1,40 @@
-# RSS specific
-rss: true         # Icons on the footer
+# Icons on the footer
+rss: true
+email_address: hello@gouy-antoine.com   # Full email address, e.g. "sam@example.com"
+behance: Caidezel
+bitbucket:
+dribbble:
+facebook: antoinegouy.pro
+flickr:
+gitlab:
+github: "Caidezel"
+instagram: antoinegouy.pro
+keybase:
+linkedin: https://www.linkedin.com/in/antoinegouy/         # Full URL
+pinterest:
+reddit:
+soundcloud:
+stack_overflow:
+stack_exchange:   # Full URL
+steam:
+tumblr:
+twitter: antoinegouy          # "twitter username"
+vimeo:
+wordpress:
+youtube: UC453X5iTCr83PrAZasSArDA       # Youtube channel token like: UCqECaJ8Gagnn7YCbPEzWH6g
+
+# rss specify feed path
 feed:
-  path: feed.xml  # RSS feed path
+  path: feed.xml
 
 # Share button options
 share:
-  email: true
   facebook: true
-  linkedin: true
-  pinterest: true
-  pocket:
-  reddit: true
-  tumblr: true
   twitter: true
+  tumblr:
+  pinterest:
+  pocket:
+  reddit: 
+  linkedin: true
   wordpress:
+  email: true
