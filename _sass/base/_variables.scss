@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 $font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-headings: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-logo: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-headings: 'whateverittakes', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-logo: 'Stella','Source Sans Pro', Helvetica, Arial, sans-serif;
 $font-size: 1.25em;
 
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif !default;
@@ -26,7 +26,6 @@ $break: 768px;
 $sm-break: 576px;
 $x-sm-break: 320px;
 
-
 /* THEME COLOR SCHEMES */
 html, html[data-theme="light"] {
   --background: #ffffff;
@@ -48,6 +47,9 @@ html, html[data-theme="light"] {
   --h5: #262626;
   --h6: #262626;
   --border: rgba(0, 0, 0, 0.2);
+  
+    // Additionnal variables
+    --footericon: #e0cff3
 }
 
 html[data-theme="dark"] {

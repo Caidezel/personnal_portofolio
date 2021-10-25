@@ -1,24 +1,24 @@
 # Icons on the footer
-behance:
+behance: Caidezel
 bitbucket:
-calendly:
+calendly: https://calendly.com/antoinegouy/
 dribbble:
-facebook:
+facebook: antoinegouy.pro
 flickr:
-github: sylhare
+github: "Caidezel"
 gitlab:
 google-scholar:   # e.g. "WXAAOb0AAAAJ"
-instagram:
+instagram: antoinegouy.pro
 hacker-news:
 keybase:
-linkedin:
-mail:             # e.g. "sam@mail.com"
-map:              # e.g. "34.0886/-118.3191"
+linkedin: https://www.linkedin.com/in/antoinegouy/
+mail: hello@gouy-antoine.com             # e.g. "sam@mail.com"
+map: https://goo.gl/maps/bprGY3KbDH711kF97              # e.g. "34.0886/-118.3191"
 mastodon:         # e.g. "fostodon.org/@sam"
 matrix:           # e.g. "@sam:matrix.org"
 medium:
 patreon:
-phone:            # e.g. "+11111111111"
+phone: +33684290867            # e.g. "+11111111111"
 pinterest:
 reddit:
 soundcloud:
@@ -28,9 +28,9 @@ stack-overflow:   # e.g. "123456789"
 steam:
 telegram:
 tumblr:
-twitch:
-twitter:
+twitch: https://www.twitch.tv/multipotentialites
+twitter: antoinegouy
 vimeo:
 vk:
 wordpress:
-youtube:          # e.g. "UCqECaJ8Gagnn7YCbPEzWH6g"
+youtube: UC453X5iTCr83PrAZasSArDA          # e.g. "UCqECaJ8Gagnn7YCbPEzWH6g"

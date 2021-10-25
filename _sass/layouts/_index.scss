@@ -1,14 +1,14 @@
 // Header text feature
 .call-out {
-	margin-top: 85px;
     display: inline-block;
     width: 100%;
     height: 100%;
     font-size: 1.2em;
     text-align: center;
-    color: $header-text-color;
-    background: $header-background-color no-repeat;
-    background-size: $feature-image-size;
+    color: var(--header-text);
+    background: var(--header-background) no-repeat;
+    background-size: 100%;
+	background-position: center;
 
     /* --- Responsive --- */
     @media screen and (max-width: 850px) {
@@ -24,7 +24,7 @@
     h3,
     h4,
     h5 {
-        @extend .header-txt-shadow;
+        //@extend .header-txt-shadow !optionnal;
     }
 
     p:last-child {
@@ -35,29 +35,6 @@
 #main {
     background-position: 100% 0, 0 center, center top;
 }
-
-// coolrow
-.coolrow {
-    .coolrow-teaser {
-        width: 100%;
-        margin-bottom: 0;
-        display: inline-block;
-        border-bottom: 1px solid $border-color;
-        p a {
-            @extend .body-link;
-        }
-    .icon-stack {
-    margin: auto; 
-    display: block;
-    }
-
-    h1, 
-    h2 {
-    text-align: center;
-    }
-        
-        }
-    }
 
 
 

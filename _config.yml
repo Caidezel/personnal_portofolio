@@ -3,20 +3,20 @@ baseurl: ""
 url: "https://gouy-antoine.com"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Antoine Gouy - Multi.Potentialité.s                                    
+title: Multi.Potentialité.s                                    
 # site's title
 
-description: "Libérez vos potentiels. Le site d'un addict aux startups / jeux-vidéo, d'un designer UI/UX, d'un formateur dans la tech/art, d'un ambassadeur Holacracy"      
+description: "Je libère vos potentiels. Le site d'un addict aux startups / jeux-vidéo, d'un designer UI/UX, d'un formateur dans la tech/art, d'un ambassadeur Holacracy"      
 # used by search engines
 
 avatar: assets/img/content/logo.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: <p>Facilitez les personnes et leur projets par le design et le numérique</p>  # Change Blog header text
-header_feature_image: assets/img/content/homebg.jpg
+header_text: Je facilite les personnes et leur projets par le design et le numérique afin de libérer leur potentiel.  # Change Blog header text
+header_feature_image: assets/img/content/homebg1.jpg
 footer_text: >
-   Amoureusement développé par votre hôte, herbergé sur GitHub Page et propulsé par <a href="https://jekyllrb.com/">Jekyll</a> avec une belle dose de <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a></br>
+   Amoureusement développé par votre hôte, hébergé sur GitHub Page et propulsé par <a href="https://jekyllrb.com/">Jekyll</a> avec une belle dose de <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a></br>
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
@@ -24,13 +24,23 @@ post_navigation: true
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
 # Features
-# More in the _data folder for social icons, share buttons, author and language
+# More in the _data folder for share buttons, author and language
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
-katex: true                                            # Enable if using math markup
-google_analytics: UA-44437680-1                        # Tracking ID, e.g. "UA-000000-01"
+katex: true                                             # Enable if using math markup
+mermaid: true                                           # Enable mermaid-js for sequence and diagrams
+google_analytics: UA-44437680-1                         # Tracking ID, e.g. "UA-000000-01"
 cookie_consent: true                                   # To respect the usage of cookies
-disqus_shortname: https-gouy-antoine-com               # Your discus shortname for comments
+color_theme: auto                                       # auto, dark1 dark2 or light
 
+# Comments
+comments:
+  disqus_shortname: https-gouy-antoine-com              # Your discus shortname for comments
+  cusdis_app_id:                                        # Your cusdis data-app-id
+  utterances:                                           # Enable by filling below information. For more info, go to https://utteranc.es
+    repo:                                               # your public comments repository (e.g. owner/repo)
+    issue-term:                                         # Issue term (e.g. "comment" consider issues with this word in the title as comments)
+    
+    
 # PAGINATION
 paginate: 5
 paginate_path: "/blog/page:num"
@@ -40,10 +50,14 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:name
+  posts:
+    permalink: /blog/:title
 
 # BUILD SETTINGS
+sass:
+  style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".idea", "vendor/*", "assets/node_modules"]
+exclude: [".jekyll-cache", ".idea", "vendor/*", "assets/node_modules/*"]
 
-# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
-# remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+#theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github

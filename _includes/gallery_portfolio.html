@@ -10,13 +10,15 @@ html { overflow-y: scroll; }
 <div id='masonry' class="grid">
 <div class="grid-sizer"></div>
 <div class="gutter-sizer"></div>
+<p>
 {% for image in site.static_files %}
   {% if image.path contains include.gallery_path %}
     
-       <a href='{{ image.path }}' data-lightbox='TEST' title-lightbox='TEST'><img src="{{ image.path | prepend: site.baseurl }}" alt="" class="grid-item" style="padding: 0;"></a>
+	<a href="{{ image.path | prepend: site.baseurl }}"  alt="{{ include.gallery_altlink }}" ><img src="{{ image.path }}" title="{{ include.gallery_titleimg }}" class="grid-item" style="padding: 1em"/></a>
 	   
   {% endif %}
 {% endfor %}
+</p>
 </div> 
 
 <!-- Require JQuery >= 3.2.1 Requireas well -->

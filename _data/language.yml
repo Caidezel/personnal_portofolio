@@ -15,3 +15,7 @@
   str_no_result_found: "Pas de résultats trouvés"
   str_cookie_approve: "Accepté"
   str_cookie_disclaimer: "Nous aimerions utiliser des cookies et scripts tiers pour améliorer l'utilisation de ce site."
+  str_months: [Janvier, Fevrier, Mars, Avril, Mai, Juin, Juillet, Aout, Septembre, Octobre, Novembre, Decembre]
+  
+  # Localization settings 
+cusdis_lang: # zh-cn, es, tr, pt-BR
