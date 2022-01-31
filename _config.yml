@@ -9,6 +9,12 @@ title: Multi.Potentialité.s
 description: "Je libère vos potentiels. Le site d'un addict aux startups / jeux-vidéo, d'un designer UI/UX, d'un formateur dans la tech/art, d'un ambassadeur Holacracy"      
 # used by search engines
 
+owner: Antoine Gouy
+ownerfull : Antoine Gouy - Multi.Potentialité.s
+email: hello@gouy-antoine.com
+repourl: https://github.com/Caidezel/personnal_portofolio
+adresse: Antoine Gouy - Multi.Potentialité.s<br>19 Rue Pierre Blanc<br>169001 Lyon
+
 avatar: assets/img/content/logo.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
