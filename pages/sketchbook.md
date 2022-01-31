@@ -10,5 +10,4 @@ tags: [Sketch]
 Il faut toujours un endroit où balancer des gribouillages. 
 Le voici :
 
-
 {% include gallery.html gallery_path=page.gallery_path %}
