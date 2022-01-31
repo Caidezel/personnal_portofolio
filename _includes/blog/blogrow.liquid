@@ -3,23 +3,23 @@
     <article><section class="post-content"><p>Il n'y a pas d'articles de blog.</p></section></article>
     {% endunless %}
     {% for post in site.posts limit:1 %}
-    <div class="post-teaser postsonfrontpage">
-					{% if post.thumbnail %}
-					<div class="post-img">
-						<a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
-							<img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
-						</a>
-					</div>
-					{% endif %}
-		<header>
+    <div class="post-teaser">
+        {% if post.thumbnail %}
+        <div class="post-img">
+            <a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
+                <img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
+            </a>
+        </div>
+        {% endif %}
+        <span>
+          <header>
             <h1>
               <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title }}
               </a>
             </h1>
-            {% include blog/post_info.html author=post.author date=post.date %}
-        </header>
-        <span>
+            {% include blog/post_info.liquid author=post.author date=post.date %}
+          </header>
           {% if site.excerpt or site.theme_settings.excerpt %}
               <div class="excerpt">
                   {% if site.excerpt == "truncate" %}
@@ -27,12 +27,8 @@
                   {% else %}
                      {{ post.excerpt | strip_html | escape }}
                   {% endif %}
-				  		      <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
-                Lire la suite...
-              </a>
               </div>
           {% endif %}
-
       </span>
     </div>
     {% endfor %}
