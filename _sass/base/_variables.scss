@@ -26,6 +26,11 @@ $break: 768px;
 $sm-break: 576px;
 $x-sm-break: 320px;
 
+
+/* MERMAID */
+// For better look, use light colour
+$main: #ccccff;
+$secondary: #decc93;
 /* THEME COLOR SCHEMES */
 html, html[data-theme="light"] {
   --background: #ffffff;
