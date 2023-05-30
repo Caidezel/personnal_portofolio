@@ -3,20 +3,37 @@ layout: post
 title: Markdown and HTML
 tags: [Katex, Markdown]
 author: rohanchandra
+categories: Syntax
 ---
 
 Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdown/syntax) with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
 
+## Table of content
+
+<!-- To be placed at the beginning of the post, it is where the table of content will be generated -->
+* TOC
+  {:toc}
+* 
+You need to put this at the beginning of the page where you want the table of content to be displayed
+
+```html
+* TOC
+{:toc}
+```
+
+It will then render the markdown and html titles (lines that begins with `#` or using the `<h1></h1>` tages)
+
+
 ## Title
 
-### Sub title
+### Subtitle
 
 Tables have also been extended from Markdown:
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+| First Header | Second Header |
+|--------------|---------------|
+| Content Cell | Content Cell  |
+| Content Cell | Content Cell  |
 
 Here's an example of an image, which is included using Markdown:
 
@@ -61,3 +78,27 @@ Alternatively, they can be shown on a new line:
 
 $$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
 
+And in your markdown file:
+
+```markdown
+$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
+```
+
+
+### Expandable content
+
+Click on the expandable content to display it:
+
+<details>
+    <summary>Click here!</summary>
+    Now you see me
+</details>
+
+And in your markdown file:
+
+```html
+<details>
+    <summary>Click here!</summary>
+    Now you see me
+</details>
+```
