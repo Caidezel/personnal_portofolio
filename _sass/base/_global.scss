@@ -258,9 +258,19 @@ kbd {
 }
 
 // Mermaid
+%mermaid-main-color {
+  fill: lighten($main, 25%) !important;
+  stroke: $main !important;
+}
+
 .mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
+
+
+  text, tspan {
+    font-family: $font-family-main !important;
+  }
 
   & > svg {
     margin: auto;
@@ -270,4 +280,25 @@ kbd {
     padding-top: 2em;
     max-width: 100%;
   }
+
+  .actor, .labelBox, .label-container {
+    @extend %mermaid-main-color
+  }
+
+  .classGroup {
+    rect, line {
+      @extend %mermaid-main-color
+    }
+  }
+
+  .note {
+    fill: lighten($secondary, 25%) !important;
+    stroke: $secondary !important;
+  }
+
+  .cluster rect {
+    fill: lighten($secondary, 40%) !important;
+    stroke: $secondary !important;
+  }
+
 }
