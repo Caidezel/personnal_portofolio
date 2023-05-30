@@ -6,10 +6,10 @@ date: November 2011
 gallery_path01: "/assets/img/portfolio/pinballcitynyc/"
 ---
 
-{% include youtubePlayer.html id="Q-xxhpBo1_s" %}  
+{% include youtubePlayer.liquid id="Q-xxhpBo1_s" %}  
 
 ## Résumé du projet :
-  - Type de projet : Jau de flipper pour smartphone
+  - Type de projet : Jeu de flipper pour smartphone
   - Année de réalisation : 2011
   - Mes rôles : Producing et suivi de la mise en production d'une équipe de 15 personnes.
   - Software utilisés : 3DSmax, adobe photoshop, adobe after effect, adobe premiere

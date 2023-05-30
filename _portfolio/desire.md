@@ -6,7 +6,7 @@ date: 10 May 2016
 gallery_path01: "/assets/img/portfolio/desire/"
 ---
 
-{% include youtubePlayer.html id="FGtgVFv8mSo" %}  
+{% include youtubePlayer.liquid id="FGtgVFv8mSo" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

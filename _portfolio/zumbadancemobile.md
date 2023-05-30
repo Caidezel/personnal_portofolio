@@ -6,7 +6,7 @@ date: 07 July 2013
 gallery_path01: "/assets/img/portfolio/zumbadance/"
 ---
 
-{% include youtubePlayer.html id="0ky0eecAegg" %}  
+{% include youtubePlayer.liquid id="0ky0eecAegg" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

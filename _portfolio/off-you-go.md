@@ -12,7 +12,7 @@ gallery_altlink2: Artwork du court-métrage
 gallery_titleimg2: Ouvrir les artworks du film
 ---
 
-{% include youtubePlayer.html id="L81VhzL3GP8" %}  
+{% include youtubePlayer.liquid id="L81VhzL3GP8" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

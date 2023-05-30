@@ -6,7 +6,7 @@ date: September 2012
 gallery_path01: "/assets/img/portfolio/markguilty/"
 ---
 
-{% include youtubePlayer.html id="0ky0eecAegg" %}  
+{% include youtubePlayer.liquid id="0ky0eecAegg" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

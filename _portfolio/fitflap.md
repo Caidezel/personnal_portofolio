@@ -6,7 +6,7 @@ date: 10 August 2015
 gallery_path01: "/assets/img/portfolio/Fitflap/"
 ---
 
-{% include youtubePlayer.html id="RywBkjNRSSY" %}  
+{% include youtubePlayer.liquid id="RywBkjNRSSY" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

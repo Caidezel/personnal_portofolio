@@ -6,7 +6,7 @@ date: 27 August 2015
 gallery_path01: "/assets/img/portfolio/Freeline/"
 ---
 
-{% include youtubePlayer.html id="PAXg-icS-KM" %}  
+{% include youtubePlayer.liquid id="PAXg-icS-KM" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage

@@ -6,7 +6,7 @@ date: July 2012
 gallery_path01: "/assets/img/portfolio/pinballcityparis/"
 ---
 
-{% include youtubePlayer.html id="7yTZ3uc1-7o" %}  
+{% include youtubePlayer.liquid id="7yTZ3uc1-7o" %}  
 
 ## Résumé du projet :
   - Type de projet : Court métrage
