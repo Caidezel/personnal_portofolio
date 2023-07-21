@@ -2,7 +2,7 @@
 layout: post
 title: Fitflap
 img: "assets/img/portfolio/head/Fitflap.png"
-date: 10 August 2015
+date: 10/08/2015
 gallery_path01: "/assets/img/portfolio/Fitflap/"
 ---
 

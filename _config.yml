@@ -13,7 +13,7 @@ owner: Antoine Gouy
 ownerfull : Antoine Gouy - Multi.Potentialité.s
 email: hello@gouy-antoine.com
 repourl: https://github.com/Caidezel/personnal_portofolio
-adresse: Antoine Gouy - Multi.Potentialité.s<br>19 Rue Pierre Blanc<br>169001 Lyon
+adresse: Antoine Gouy - Multi.Potentialité.s<br>69001 Lyon
 
 avatar: assets/img/content/logo.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
@@ -62,7 +62,7 @@ collections:
 # BUILD SETTINGS
 sass:
   style: compressed
-plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-responsive-image]
 exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
 
 #theme: type-on-strap                                  # if using the theme as a jekyll theme gem

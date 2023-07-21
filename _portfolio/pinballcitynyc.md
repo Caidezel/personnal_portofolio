@@ -2,7 +2,7 @@
 layout: post
 title: Pinball City New York par Another Way 2 Play
 img: "assets/img/portfolio/head/pinballcitynyc.png"
-date: November 2011
+date: 13/11/2011
 gallery_path01: "/assets/img/portfolio/pinballcitynyc/"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Freeline par Breakfirst
 img: "assets/img/portfolio/head/Freeline.png"
-date: 27 August 2015
+date: 27/05/2015
 gallery_path01: "/assets/img/portfolio/Freeline/"
 ---
 

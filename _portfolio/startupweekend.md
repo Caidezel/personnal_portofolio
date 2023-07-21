@@ -2,7 +2,7 @@
 layout: post
 title: Startup Weekend Lyon Video Games #1
 img: "assets/img/portfolio/head/startupweekend.png"
-date: 8 April 2019
+date: 8/04/2019
 gallery_path01: "/assets/img/portfolio/startupweekend/"
 ---
 

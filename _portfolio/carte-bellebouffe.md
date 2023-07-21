@@ -2,7 +2,7 @@
 layout: post
 title: Carte Covid 19 par Bellebouffe et Zero Dechet Lyon
 img: "assets/img/portfolio/head/cartebellebouffe.png"
-date: 14 May 2020
+date: 14/05/2020
 gallery_path01: "/assets/img/portfolio/cartebellebouffe/"
 ---
 

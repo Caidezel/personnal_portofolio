@@ -2,7 +2,7 @@
 layout: post
 title: Emoko par Unik
 img: "assets/img/portfolio/head/emoko.png"
-date: 15 November 2017
+date: 15/11/2017
 gallery_path01: "/assets/img/portfolio/emoko/"
 ---
 

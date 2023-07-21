@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Politique de donénes
+title: Politique de données
 permalink: /privacy/
 feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]

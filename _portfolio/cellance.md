@@ -2,7 +2,7 @@
 layout: post
 title: Exe par Cellance
 img: "assets/img/portfolio/head/exebycellance.png"
-date: 15 November 2017
+date: 15/11/2017
 gallery_path01: "/assets/img/portfolio/exebycellance/"
 ---
 

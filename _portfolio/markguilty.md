@@ -2,7 +2,7 @@
 layout: post
 title: Mark Guilty
 img: "assets/img/portfolio/head/markguilty.png"
-date: September 2012
+date: 03/09/2012
 gallery_path01: "/assets/img/portfolio/markguilty/"
 ---
 

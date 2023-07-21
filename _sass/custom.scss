@@ -21,7 +21,9 @@ html, html[data-theme="light"] {
   --h6: #262626;
   --border: rgba(0, 0, 0, 0.2);
       // Additionnal variables
-    --footericon: #e0cff3
+    --footericon: #e0cff3;
+	--divider: #d3f861;
+	--footertext:#cdd9e5;
 }
 
 html[data-theme="dark"] {
@@ -47,7 +49,9 @@ html[data-theme="dark"] {
   --cusdis--color-text-default: var(--text);
   --cusdis--color-comment-username-text: var(--link);
     // Additionnal variables
-    --footericon: #e0cff3
+    --footericon: #e0cff3;	
+	--divider: #d3f861;
+	--footertext:#cdd9e5;
 }
 
 /* BASE16 CODE HIGHLIGHT */
@@ -167,4 +171,8 @@ html[data-theme="dark"] {
 .portfoliogridonfrontpage {
 	display:inline-flex !important;
 	}
+	
+.soliddivider {
+  border-bottom: 5px solid var(--divider);
+}
 	

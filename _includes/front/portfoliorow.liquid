@@ -2,11 +2,11 @@
 
   <div class="coolrow">
       <div class="coolrow-teaser">
-        <h1 class="title">Un aperçu de mon portofolio</h1>
+        <h1 class="title">Mes travaux</h1>
 				<div class="col text-center">
 				
 <div class="portfolio-grid portfoliogridonfrontpage">
-	{% assign sorted = site.portfolio | sort: 'date' | reverse %}
+	{% assign sorted = site.portfolio | sort: "date" | reverse %}
     {% for item in sorted limit:3 %}
     <div class="portfolio-cell">
         <a class="portfolio-link" data-keyboard="true" href="{{ item.url | relative_url }}">
@@ -26,7 +26,7 @@
           <div class="container">
 			<div class="row">
 				<div class="col text-center">
-                <a href="/portfolio/"><button type="button" class="btn btn-primary">Explorer mon portfolio</button></a>
+                <a href="/travaux/"><button type="button" class="btn btn-primary">Explorer mon portfolio</button></a>
 				</div>
 			</div>
         </div>

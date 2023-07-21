@@ -2,7 +2,7 @@
 layout: post
 title: Désiré par Sylvain Seccia
 img: "assets/img/portfolio/head/desire.png"
-date: 10 May 2016
+date: 10/05/2016
 gallery_path01: "/assets/img/portfolio/desire/"
 ---
 

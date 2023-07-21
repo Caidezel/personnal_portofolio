@@ -1,8 +1,60 @@
 <div class="coolrow">
       <div class="coolrow-teaser">
-		<h1 class="title">Retrouvez-moi sur les réseaux</h1>
-							<iframe allowfullscreen id="wallsio-iframe" src="https://walls.io/i9z66?nobackground=1&amp;show_header=0" style="border:0;height:500px;width:100%" title="Site Perso"></iframe>
+        <h1 class="title">Mes dernières actualités</h1>
+        <div class="bootstrap-iso">
+          <div class="container">
+            <div class="row">
+			
+					<div class="col-sm">
+						<h3 class="title text-center">Mon dernier article de blog</h3>
+							<div class="posts">
+								{% unless site.posts %}
+								<article><section class="post-content"><p>Il n'y a pas d'articles de blog.</p></section></article>
+								{% endunless %}
+								{% for post in site.posts limit:1 %}
+									<div class="post-teaser">
+									{% include blog/post_info.liquid author=post.author date=post.date %}
+										{% if	 post.thumbnail %}
+										<div class="post-img">
+											<a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
+											<img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
+											</a>
+										</div>
+										{% endif %}
+											<div>
+													<h3 class="text-center">
+														<a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+													</h3>
+												{% if site.excerpt or site.theme_settings.excerpt %}
+													<div class="excerpt">
+													  {% if site.excerpt == "truncate" %}
+														 {{ post.content | strip_html | truncate: '250' | escape }}
+													  {% else %}
+														 {{ post.excerpt | strip_html | escape }}
+													  {% endif %}
+													</div>
+												{% endif %}
+											</div>
+									</div>
+								{% endfor %}
+								<div class="row">
+									<div class="col text-center">
+									<a href="/blog/"><button type="button" class="btn btn-primary">Explorer les articles précédent</button></a>
+									</div>
+								</div>
+							</div>
+					</div>
+
+					<div class="col-sm">
+						<h3 class="title text-center">Retrouvez-moi sur les réseaux</h3>
+						<iframe allowfullscreen id="wallsio-iframe" src="https://walls.io/i9z66?nobackground=1&amp;show_header=0" style="border:0;height:500px;width:100%" title="Site Perso"></iframe>
+					</div>
+					
+			</div>
 		</div>
+     </div>
+		</div>
+      </div>
 </div>
 
 

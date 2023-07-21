@@ -2,7 +2,7 @@
 layout: post
 title: Golf-Shotz par Addon Sport
 img: "assets/img/portfolio/head/golfshotz.png"
-date: 9 February 2019
+date: 9/02/2019
 gallery_path01: "/assets/img/portfolio/golfshotz/"
 ---
 

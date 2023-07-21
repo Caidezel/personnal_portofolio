@@ -29,3 +29,6 @@ Un homme vantard et narcissique sonne chez une femme pour sortir. Il prend un pe
 ## Mon travail et mes réalisations dans le cadre de ce projet :
 
 {% include gallery_portfolio.html gallery_path=page.gallery_path2 gallery_altlink=page.gallery_altlink2 gallery_titleimg=page.gallery_titleimg2  %}
+
+
+{% include aligner.html images="/portfolio/offyougo/offyougoartworks/offyougo_concept (1).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (2).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (3).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (4).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (5).jpg, /portfolio/offyougo/offyougoartworks/offyougo_concept (6).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (7).jpg,/portfolio/offyougo/offyougoartworks/offyougo_concept (8).jpg" %}

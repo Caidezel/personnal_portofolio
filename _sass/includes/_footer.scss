@@ -4,8 +4,12 @@
   display: inline-block;
   text-align: center;
   width: 100%;
-  color: var(--meta);
+  background-color: var(--meta);
   font-size: 0.9em;
+  
+  p {
+  color: var(--footertext);
+  }
 
   .footer-icons {
     ul {

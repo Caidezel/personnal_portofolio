@@ -2,7 +2,7 @@
 layout: post
 title: Pinball City Paris par Another Way 2 Play
 img: "assets/img/portfolio/head/pinballcityparis.png"
-date: July 2012
+date: 5/07/2012
 gallery_path01: "/assets/img/portfolio/pinballcityparis/"
 ---
 

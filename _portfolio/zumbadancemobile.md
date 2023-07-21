@@ -2,7 +2,7 @@
 layout: post
 title: Zumba Dance par Breakfirst
 img: "assets/img/portfolio/head/zumbadance.png"
-date: 07 July 2013
+date: 07/07/2013
 gallery_path01: "/assets/img/portfolio/zumbadance/"
 ---
 

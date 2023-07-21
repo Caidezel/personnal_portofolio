@@ -2,7 +2,7 @@
 layout: post
 title: 3DBrowser par Mootools
 img: "assets/img/portfolio/head/mootools.png"
-date: 5 June 2020
+date: 5/06/2020
 gallery_path01: "/assets/img/portfolio/mootools/"
 ---
 

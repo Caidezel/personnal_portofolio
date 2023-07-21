@@ -11,13 +11,15 @@ html { overflow-y: scroll; }
 <div class="grid-sizer"></div>
 <div class="gutter-sizer"></div>
 <p>
-{% for image in site.static_files %}
-  {% if image.path contains include.gallery_path %}
+
+	{% assign sorted = site.static_files | sort:"date" | reversed %}
+	{% for item in sorted %}
+	{% if item.path contains include.gallery_path %}
     
-	<a href="{{ image.path | prepend: site.baseurl }}"  alt="{{ include.gallery_altlink }}" ><img src="{{ image.path }}" title="{{ include.gallery_titleimg }}" class="grid-item" style="padding: 1em"/></a>
+	<a href="{{ item.path | prepend: site.baseurl }}"  alt="{{ include.gallery_altlink }}" ><img src="{{ item.path }}" title="{{ include.gallery_titleimg }}" class="grid-item" style="padding: 1em"/></a>
 	   
-  {% endif %}
-{% endfor %}
+	{% endif %}
+	{% endfor %}
 </p>
 </div> 
 
