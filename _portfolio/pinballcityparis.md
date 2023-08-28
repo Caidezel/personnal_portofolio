@@ -3,25 +3,29 @@ layout: post
 title: Pinball City Paris par Another Way 2 Play
 img: "assets/img/portfolio/head/pinballcityparis.png"
 date: 5/07/2012
-gallery_path01: "/assets/img/portfolio/pinballcityparis/"
+
+tags: [gestion de projet, jeu vidéo]
+
+gallery_path1: "/assets/img/portfolio/pinballcityparis/"
+gallery_altlink1: Image du jeu mobile
+gallery_titleimg1: Ouvrir les images du jeu mobile
 ---
 
 {% include youtubePlayer.liquid id="7yTZ3uc1-7o" %}  
 
 ## Résumé du projet :
-  - Type de projet : Court métrage
-  - Année de réalisation : 2009
-  - Mes rôles : Préproduction 2D, production 3D, rendu.
-  - Mes rôles : Préproduction 2D, production 3D, rendu.
-  - Software utilisés : 3DSmax, adobe photoshop, adobe after effect, adobe premiere
-  - En collaboration avec : Jonathan Heilig, Romain Viviet, Anthony Boudimir et Audrey Petitjean à la réalisation de l'animation, Aurélien Portehaut et Delphine Leputh comme acteurs, Erwann Chandon à la musique et Alexandre Perrier au sound design.
+  - Studio : [Another Way 2 Play]({{site.data.links.anotherway2play}})
+  - Type de projet : Jeu de flipper pour smartphone
+  - Année de réalisation : 2012
+  - Mes rôles : Producing et suivi de la mise en production d'une équipe de 15 personnes. Conseil aux contraintes de production jeu vidéo.
+  - Software utilisés : 3DSmax, Adobe photoshop, Unity, Adobe premiere
 
 ## Pitch du projet :
-Un homme vantard et narcissique sonne chez une femme pour sortir. Il prend un peu trop ses aises. L'appartement et tout les objets qu'il contient finissent par se retourner contre lui. "Off You Go" est un court-métrage étudiant sur lequel je suis intervenu.
+Plongez dans la Ville Lumière et découvrez la beauté d'un Paris rétro en HD. Explorez des sites célèbres comme la Tour Eiffel, l'Arc de Triomphe, la basilique du Sacré-Cœur, le Louvre et les mystérieuses catacombes.
 
-## Un aperçu du court métrage :
-{% include gallery_portfolio.html gallery_path=page.gallery_path01 %}
+## Mon travail dans le cadre de ce projet :
 
-## Mon travail graphique et mes réalisations dans le cadre de ce projet :
+J'ai travaillé sur cet opus en tant que chef de projet. Mon rôle a été d'encadrer la pléthore de graphistes en charge de la réalisation des assets durant un court laps de temps. Il m'a fallu éditer les contraintes techniques sous Unity, les faire respecter et dialoguer avec les personnes en charge de la programmation afin de faire livrer des assets cohérents et optimisés et de guider les graphistes dans la réalisation de ces derniers.
+Sur cette table, j'ai eu la chance de pouvoir déléguer la direction artistique à [Morgane Schlotterbeck]({{site.data.links.morganeschlotterbeck}}), et [Guillaume Dumas]({{site.data.links.guillaumedumas}}) au GameDesign.
 
-{% include gallery_portfolio.html gallery_path=page.gallery_path02 %}
+{% include aligner.html gallery_path=page.gallery_path1 gallery_titlelink=page.gallery_titlelink1 gallery_altlink=page.gallery_altlink1 gallery_titleimg=page.gallery_titleimg1 gallery_altimg=page.gallery_altimg1 %}

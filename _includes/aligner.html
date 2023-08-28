@@ -1,4 +1,4 @@
-{% assign images = include.images | split: ',' %}
+<!--{% assign images = include.images | split: ',' %}
 
 {% if include.column == "auto" %}
 {% assign column = 100.0 | divided_by: images.size %}
@@ -6,14 +6,50 @@
 {% assign column = 100.0 | divided_by: include.column %}
 {% endif %}
 
+
 <div class="row">
     {% for image in images %}
     <div {% if column %} style="flex: {{ column }}%" {% else %} class="column" {% endif %}  >
-        <img {% if images.size == 1 %}class="single"{% endif %}
-             src="{{ image | prepend: 'assets/img/' | relative_url }}"
-             alt="{{ image | prepend: '/' | split: '/' | last }}">
+        
+		<a href="{{ image | prepend: 'assets/img/' | relative_url }}"  alt="{{ include.gallery_altlink }}" >
+			<img {% if images.size == 1 %}class="single"{% endif %}
+				 src="{{ image | prepend: 'assets/img/' | relative_url }}"
+				 title="{{ include.gallery_titleimg }}"
+				 alt="{{ image | prepend: '/' | split: '/' | last }}">
+		</a>
     </div>
     {% endfor %}
 </div>
 
 {% assign column = false %}
+
+
+-->
+
+{% assign sorted = site.static_files | sort:"date" | reversed %}
+
+{% if include.column == "auto" %}
+{% assign column = 100.0 | divided_by: include.column % %}
+{% elsif include.column > 0 %}
+{% assign column = 100.0 | divided_by: include.column %}
+{% endif %}
+
+<div class="row">
+	{% for item in sorted %}
+	{% if item.path contains include.gallery_path %}
+    <div {% if column %} style="flex: {{ column }}%" {% else %} class="column" {% endif %}  >
+		<a href="{{ item.path | prepend: site.baseurl }}"  alt="{{ include.gallery_altlink }}" >
+			<img {% if sorted.size == 1 %} class="single"{% endif %}
+				 src="{{ item.path }}"
+				 title="{{ include.gallery_titleimg }}"
+				 alt="{{ image | prepend: '/' | split: '/' | last }}">
+		</a>
+
+    </div>
+	{% endif %}
+    {% endfor %}
+
+</div>
+
+{% assign column = false %}
+	
