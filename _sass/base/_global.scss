@@ -277,6 +277,7 @@ details {
   border-radius: 2%;
 
 
+
   text, tspan {
     font-family: $font-family-main !important;
   }
@@ -289,26 +290,7 @@ details {
     padding-top: 2em;
     max-width: 100%;
   }
-
-  .actor, .labelBox, .label-container {
-    @extend %mermaid-main-color
   }
 
-  .classGroup {
-    rect, line {
-      @extend %mermaid-main-color
-    }
-  }
 
-  .note {
-    fill: lighten($secondary, 25%) !important;
-    stroke: $secondary !important;
-  }
-
-  .cluster rect {
-    fill: lighten($secondary, 40%) !important;
-    stroke: $secondary !important;
-  }
-
-}
 
