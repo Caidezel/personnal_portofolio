@@ -6,10 +6,10 @@ date: 01/09/2009
 
 tags: [court métrage, 3D]
 
-gallery_path1: "/assets/img/portfolio/offyougo/offyougomovie/"
+gallery_path1: "/assets/img/portfolio/off-you-go/offyougomovie/"
 gallery_altlink1: Image du court-métrage
 gallery_titleimg1: Ouvrir les images du film
-gallery_path2: "/assets/img/portfolio/offyougo/offyougoartworks/"
+gallery_path2: "/assets/img/portfolio/off-you-go/offyougoartworks/"
 gallery_altlink2: Artwork du court-métrage 
 gallery_titleimg2: Ouvrir les artworks du film
 ---
