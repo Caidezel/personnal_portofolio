@@ -16,6 +16,9 @@
   str_cookie_approve: "Accepté"
   str_cookie_disclaimer: "Nous aimerions utiliser des cookies et scripts tiers pour améliorer l'utilisation de ce site."
   str_months: [Janvier, Fevrier, Mars, Avril, Mai, Juin, Juillet, Aout, Septembre, Octobre, Novembre, Decembre]
-  
+  str_dark: 'Dark'
+  str_light: 'Light'
+  str_date_format: '%B %-d, %Y'
+
   # Localization settings 
 cusdis_lang: # zh-cn, es, tr, pt-BR

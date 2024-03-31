@@ -4,6 +4,7 @@ title : Mes Travaux
 permalink: /travaux/
 subtitle: "Retrouvez mes réalisations" 
 feature-img: "assets/img/pexels/computer.jpeg"
+position: 4
 tags: [Page]
 order : 1
 ---

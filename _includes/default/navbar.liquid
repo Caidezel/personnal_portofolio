@@ -21,20 +21,21 @@
     <!-- Menu -->
     <ul class="hide">
         {% assign name_page = "" %}
-		{% assign sorted_pages = site.pages | sort:"order" %}
-        {% for node in sorted_pages %}
-		{% if node.order %}
-            {% unless node.title == null or node.hide or name_page contains node.title %}
+        {% assign emptyArray = '' | split: '' %}
+        {% assign menus = site.data.menu | default: emptyArray %}
+        {% assign pages = site.pages | concat: menus | sort: 'position' %}
+        {% for page in pages %}
+        {% unless page.title == null or page.hide or name_page contains page.title %}
             <li class="separator"> | </li>
             <li>
-                <a class="clear" aria-label="{{ page.title }}" title="{{ node.title }}" href="{{ node.url | relative_url }}">
-                    {% if node.icon %} <i class="fas {{ node.icon }}" aria-hidden="true"></i>
-                    {% else %} {{ node.title }} {% endif%}
+                <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
+                    {% if page.icon %} <i class="navbar-icon fas {{ page.icon }}" aria-hidden="true"></i>{% endif %}
+                    <span class="navbar-label {% if page.icon %}navbar-label-with-icon{% endif%}">{{ page.title }}</span>
                 </a>
             </li>
-            {% endunless %}
-            {% assign name_page = node.title | append: name_page %}
-			        {% endif %}
+        {% endunless %}
+        {% assign name_page = page.title | append: name_page %}
+
         {% endfor %}
 
         {% if site.color_theme == 'auto' %}

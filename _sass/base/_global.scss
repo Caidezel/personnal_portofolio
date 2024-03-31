@@ -271,12 +271,8 @@ details {
 }
 
 // Mermaid
-%mermaid-main-color {
-  fill: lighten($main, 25%) !important;
-  stroke: $main !important;
-}
 
-.mermaid {
+.mermaid, .language-mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
 
