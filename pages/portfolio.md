@@ -8,4 +8,5 @@ tags: [Page]
 order : 1
 ---
 
+http://{{ baseurl}}/{{ page.permalink }}.com
 {% include portfolio.html %}
