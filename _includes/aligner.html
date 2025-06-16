@@ -6,7 +6,6 @@
 {% assign column = 100.0 | divided_by: include.column %}
 {% endif %}
 
-
 <div class="row">
     {% for image in images %}
     <div {% if column %} style="flex: {{ column }}%" {% else %} class="column" {% endif %}  >
@@ -19,7 +18,11 @@
 		</a>
     </div>
     {% endfor %}
-</div>
+    {% if include.caption %}
+    {% endif %}
+    <figcaption class="caption-style">{{ include.caption }}</figcaption>
+</figure>
+
 
 {% assign column = false %}
 

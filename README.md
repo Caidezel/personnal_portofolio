@@ -1,6 +1,6 @@
 # Type on Strap 🎨
 
-[![Build](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml/badge.svg)](https://github.com/sylhare/Type-on-Strap/actions/workflows/jekyll-build.yml)
+[![Build](https://github.com/sylhare/Type-on-Strap/actions/workflows/docker-build.yml/badge.svg)](https://github.com/sylhare/Type-on-Strap/actions/workflows/docker-build.yml)
 [![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
 [![Docker Pulls](https://img.shields.io/docker/pulls/sylhare/type-on-strap)](https://hub.docker.com/r/sylhare/type-on-strap)
 
@@ -14,7 +14,7 @@ Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) 
 * Multi comments 💬 options  
 * Tags compatibility 🏷
 * Handle _Bootstrap_'ed pages: [Get Bootstrap](http://getbootstrap.com/)
-* 🔎 Search feature: [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+* 🔎 Search feature: [Simple-Jekyll-Search](https://github.com/sylhare/Simple-Jekyll-Search)
 * Math Rendering : [KateX](https://github.com/Khan/KaTeX)
 * Diagram Rendering: [Mermaid-js](https://github.com/mermaid-js/mermaid)
 * 🖋 Nice fonts: [Font Awesome](https://fontawesome.com/), [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro), [Pacifico](https://fonts.google.com/specimen/Pacifico?selection.family=Pacifico) 
@@ -27,13 +27,7 @@ Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) 
 
 ## Usage
 
-### As a ruby gem 💎
-
-Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/sylhare/Type-On-Strap)
-
-### As a github page 📋
+### As a GitHub page 📋
 
 1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
 2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
@@ -41,6 +35,12 @@ Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
 4. Customize the theme
 	- GitHub Page: [update `_config.yml`](#site-configuration)
 5. Run the Jekyll server: `bundle exec jekyll serve`
+
+### As a ruby gem 💎
+
+Check out this tutorial: [Use as Ruby Gem](#use-as-ruby-gem-)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#/https://github.com/sylhare/Type-On-Strap)
 
 ## Structure
 
@@ -66,8 +66,9 @@ Here are the main files of the template
 |   ├── search.md	       # Search page
 |   └── tags.md                # The tag page
 ├── _config.yml                # sample configuration
-├── _data.yml
+├── _data
 |  ├── authors.yml             # Update the post authors configurations 
+|  ├── comments.yml            # Comments configuration (Disqus, Cusdis, Utterances, Giscus)
 |  ├── language.yml            # Localization configuration
 |  ├── biblio.yml              # To create a reference bibliography
 |  ├── social.yml              # Social configurations to share posts (RSS, shares, ...)
@@ -165,9 +166,10 @@ with suffix `-small` (620x320) and `-medium` (1240x640) to display on smaller sc
 Localization string is a way to quickly change the template language for text like *Next Post* or *Follow on*, ...
 You can find all the properties in `_data/language.yml`.
 
-By default, it is in English, but you can easily add your own language.
+By default, it is in English, but you can add your own language.
 
-Here you also can set the date format, e.g., set `str_date_format: '%B %-d, %Y'` for "January, 13, 2024",  `str_date_format: '%Y-%m-%d'` for 2024-01-13, or `str_date_format: '%d.%m.%Y'` for 13.01.2024.
+Here you also can set the date format, e.g., set `str_date_format: '%B %-d, %Y'` for "January, 13, 2024",
+`str_date_format: '%Y-%m-%d'` for 2024-01-13, or `str_date_format: '%d.%m.%Y'` for 13.01.2024.
 
 ### Google Analytics
 
@@ -182,12 +184,15 @@ It will use the [Google Tag Manager](https://support.google.com/analytics/answer
 
 ### Comments 💬
 
+Type-on-Strap supports multiple comment systems. 
+Use `_data/comments.yml` for all comment configurations
+
 #### Disqus
 
 If you have a [Disqus](https://disqus.com/) account, you can show a comments section below each post.
 
 To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) 
-to your project's `_config.yml` file:
+to your project's `_data/comments.yml.yml` file:
 
 ```yml
 comments:
@@ -199,7 +204,7 @@ comments:
 [Cusdis](https://cusdis.com/) is an open-source alternative to Disqus.
 You can read more about it in the [documentation](https://cusdis.com/doc#/)
 
-To enable it, set your Cusdis name in `_config.yml`:
+To enable it, set your Cusdis name in `_data/comments.yml.yml`:
 
 ```yaml
 comments:
@@ -212,7 +217,7 @@ comments:
 It stores the comments as GitHub issues on a repository for each page.
 
 Install the utterance [app](https://github.com/apps/utterances) to your repo.
-After installing, add your info in the `_config.yml`:
+After installing, add your info in the `_data/comments.yml.yml`:
 
 ```yaml
 comments:
@@ -221,6 +226,31 @@ comments:
     issue-term:            # Issue term (e.g. "comment" consider issues with this word in the title as comments)
     theme:                 # OPTIONAL: Take the `color_theme` by default, or set a custom one like github-dark-orange
     label:                 # OPTIONAL: Adds an issue label in the issue
+```
+
+#### Giscus
+
+[Giscus](https://giscus.app/) is another open source alternative linked to one's GitHub account.
+It stores the comments as GitHub discussions on a repository for each page.
+
+Install the giscus [app](https://github.com/apps/giscus) to your repo.
+After installing, add your info in the `_data/comments.yml.yml`:
+
+```yaml
+comments:
+  giscus:                   # Enable by filling below information. For more info, go to https://giscus.app
+    repo:                   # Your public comments repository (e.g. owner/repo)
+    repo-id:                # Your repo id, go to https://giscus.app to check it
+    category:               # Category to search discussions. When removed, discussions will be searched in all categories
+    category-id:            # Your category id, go to https://giscus.app to check it
+    mapping:                # Discussion mapping
+    term:                   # OPTIONAL: some mappings require specific term, go to https://giscus.app to check it
+    strict: 1               # OPTIONAL: Avoid mismatches on similar titles
+    reactions-enabled: 0    # OPTIONAL: Disable reactions
+    emit-metadata: 1        # OPTIONAL: Emit discussion metadata
+    input-position: top     # OPTIONAL: Place the comment box above the comments
+    theme:                  # OPTIONAL: Take the `color_theme` by default, or set a custom one like dark_dimmed
+    lang:                   # OPTIONAL: Choose the language. "en" is used by default
 ```
 
 ### Math typesetting with KateX
@@ -295,7 +325,8 @@ Display icons in the footer.
 All icon variables should be your username enclosed in quotes (e.g. "username") in `_data/icons.yml`.
 
 You can update the RSS settings in `_data/social` to change the default feed path (generated by [jekyll-feel](https://github.com/jekyll/jekyll-feed)).
-To enable the share icons at the bottom of each article set to true the one you'd like under `share` in the `_data/social.yml` file.
+To enable the share icons at the bottom of each article,
+set to true the one you'd like under `share` in the `_data/social.yml` file.
 
 ### Personalize your Blog Posts 📝
 
@@ -318,7 +349,7 @@ title: Hello World                                # Title of the page
 hide_title: true                                  # [Opt] Hide the title when displaying the post, but shown in lists of posts
 feature-img: "assets/img/sample.png"              # [Opt] Add a feature-image to the post
 thumbnail: "assets/img/thumbnails/sample-th.png"  # [Opt] Add a thumbnail image on blog view
-color: rgb(80,140,22)                             # [Opt] Add the specified colour as feature image, and change link colors in post
+color: rgb(80,140,22)                             # [Opt] Add the specified color as feature image and links in post
 position: 1                                       # [Opt] Set position on the menu navigation bar
 tags: [sample, markdown, html]                    # [Opt] Add tags to the page
 ---
@@ -339,7 +370,7 @@ It will respect the page and theme layout, mind the padding on the sides.
 
 #### Post excerpt
 
-The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) are the first lines of an article that is displayed on the blog page. 
+The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) is the head of the article rendered in the blog page. 
 The length of the excerpt has a default of around `250` characters or can be manually set in the post using:
 
 in `conflig.yml`:
@@ -369,8 +400,12 @@ The html is stripped out of the excerpt, so it only displays text.
 
 To easily add align images side by side in your article using the `aligner.html` include:
 
-```ruby
-{% include aligner.html images="path/to/img1.png,path/to/img2.png,path/to/img3.png" column=3 %}
+```liquid
+{% include aligner.html 
+  images="path/to/img1.png,path/to/img2.png,path/to/img3.png" 
+  column=3 
+  caption="some description" 
+%}
 ```
 
 Use it in any markdown file. There are two fields in the _include_ you need to look into:
@@ -380,6 +415,7 @@ Use it in any markdown file. There are two fields in the _include_ you need to l
     - default is 2 columns
     - `column=3` set 3 columns
     - `column="auto"` makes as many columns as images
+  - _caption_: (OPTIONAL) Add a caption to the images
 
 #### Code highlight
 
@@ -500,7 +536,7 @@ gallery: "assets/img/pexels"
 
 ### Feature: Search 🔍
 
-The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) 
+The search feature is based on [Simple-Jekyll-search](https://github.com/sylhare/Simple-Jekyll-Search) 
 there is a `search.liquid` file that will create a list of all the site posts, pages and portfolios. 
 Then there's a script displaying the formatted results in the _search page_.
 
@@ -545,7 +581,7 @@ The Tag page can be hidden with the `hide` option. You can remove the icon by re
 
 Jekyll works with [liquid](https://shopify.github.io/liquid/) tags usually represented by:
 
-```
+```liquid
 {{ liquid.tag | filter }}
 ```
 
@@ -605,7 +641,7 @@ You can use Type-on-strap as a [gem](https://rubygems.org/gems/type-on-strap).
 Using the [Ruby Gem Method](https://sylhare.github.io/2021/03/25/Run-type-on-strap-jekyll-theme-locally.html).
 Add this line to your Jekyll site's Gemfile (or create one):
 
-```ruby
+```shell
 gem "type-on-strap"
 ```
 
@@ -617,7 +653,7 @@ theme: type-on-strap
 
 Then run Bundler to install the theme gem and dependencies:
 
-```bash
+```shell
 bundle install
 ```
 

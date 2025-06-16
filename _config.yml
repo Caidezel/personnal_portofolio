@@ -30,7 +30,7 @@ post_navigation: true
 color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
 
 # Features
-# More in the _data folder for share buttons, author and language
+# More in the _data folder for comments, share buttons, author and language
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true                                             # Enable if using math markup
 mermaid: default                                           # Enable mermaid-js for sequence and diagrams
@@ -63,6 +63,7 @@ collections:
 sass:
   style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed, jekyll-responsive-image]
+  quiet_deps: true
 exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
 
 #theme: type-on-strap                                  # if using the theme as a jekyll theme gem

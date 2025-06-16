@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    if: ${{ github.ref == 'refs/heads/master' }}
     name: Build
     runs-on: ubuntu-latest
     permissions:
@@ -16,16 +17,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Ruby 3.1
+      - name: Set up Ruby 3.4
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.0
+          ruby-version: 3.4.0
       - name: Install
         run: bundle install
-      - name: Build jekyll site
-        run: bundle exec jekyll build
       - name: Build the gem
-        continue-on-error: true
         run: |
           gem build *.gemspec
           echo `find . -name "*.gem" | tail -1 | awk -F"[/]" '{print $2}'`
