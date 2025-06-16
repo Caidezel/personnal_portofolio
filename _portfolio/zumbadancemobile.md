@@ -27,6 +27,21 @@ gallery_titleimg2: Ouvrir les images du jeu mobile Zumba Dance
 
 ## Pitch du projet :
 Entraînez-vous partout avec "Zumba® Fitness" grâce à la nouvelle application mobile" Zumba® Dance" ! "Zumba® Dance" est la première application avec des entraînements complets pouvant vous encourager et vous faire des remarques.
+  - Studio : [Breakfirst Games]({{site.data.links.breakfirstgames}})
+  - Type de projet : Jeu vidéo mobile
+  - Année de réalisation : 2013
+  - Mes rôles : Préproduction 2D, production 2D-3D, portage, intégration rendu.
+  - Software utilisés : Maya, Adobe Photoshop, Adobe AfterEffect, Motion Builder, Unity
+
+## Pitch du projet :
+Entraînez-vous partout avec "Zumba® Fitness" grâce à la nouvelle application mobile "Zumba® Dance" ! 
+
+"Zumba® Dance" est la première application avec des entraînements complets pouvant vous encourager et vous faire des remarques.
+Cette application de danse de "Zumba®", est éditée par "Majesco Entertainment", et produite par "[Breakfirst Games]({{site.data.links.breakfirstgames}})". Elle est disponible sur  "iOs", "Android Google" et "Android Amazon". "Zumba® Dance" est une des premières applications utilisant la reconnaissance de mouvement grâce à la caméra de vos tablettes et développée par "Breakfirst". Bien accueillie par la critique, l'application s'est classée première application de fitness sur "iOs" pendant quelques semaines et fonctionne encore correctement sur les trois magasins.
+
+### Première application de fitness sur "iOs"
+
+J'ai travaillé en tant que graphiste 2D/3D pour le studio de développement lyonnais "BreakfirtGames". J'ai eu à charge de réaliser les designs graphiques de la totalité des interfaces de l'application, en relation avec le designer du projet. Mais aussi à m'occuper de toute la gestion des modèles, animations et des environnements 3D du jeu sous Unity et d'optimiser ces derniers pour assurer les performances sous toutes les tablettes visées en suivant les indications du directeur technique. J'ai à cette occasion travailler sous MotionBuilder pour réaliser du clean de motion capture, Maya et Photoshop.
 
 Cette application de danse de "Zumba®", est éditée par "Majesco Entertainment", et produite par "BreakfirtGames". Elle est disponible sur  "iOs", "Android Google" et "Android Amazon". 
 
