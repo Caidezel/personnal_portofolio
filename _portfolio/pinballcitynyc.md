@@ -28,4 +28,4 @@ Plongez-vous dans un New York sombre et élégant comme vous ne l’avez jamais 
 J'ai travaillé sur cet opus en tant que chef de projet. Mon rôle a été d'encadrer la pléthore de graphistes en charge de la réalisation des assets durant un court laps de temps. Il m'a fallu éditer les contraintes techniques sous Unity, les faire respecter et dialoguer avec les personnes en charge de la programmation afin de faire livrer des assets cohérents et optimisés et de guider les graphistes dans la réalisation de ces derniers.
 Sur cette table, j'ai eu la chance de pouvoir déléguer la direction artistique à [Arielle Dethomas]({{site.data.links.arielledethomas}}) et [Floriane Caserio]({{site.data.links.florianecaserio}}). Sans oublier, Anthony Boudimir au Game-Design.
 
-{% include aligner.html gallery_path=page.gallery_path1 gallery_titlelink=page.gallery_titlelink1 gallery_altlink=page.gallery_altlink1 gallery_titleimg=page.gallery_titleimg1 gallery_altimg=page.gallery_altimg1 %}
+{% include aligner.html gallery_path=page.gallery_path1 gallery_titlelink=page.gallery_titlelink1 gallery_altlink=page.gallery_altlink1 %}

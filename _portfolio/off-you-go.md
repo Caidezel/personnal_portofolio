@@ -9,7 +9,12 @@ tags: [court métrage, 3D]
 gallery_path1: "/assets/img/portfolio/off-you-go/offyougomovie/"
 gallery_altlink1: Image du court-métrage
 gallery_titleimg1: Ouvrir les images du film
+<<<<<<< Updated upstream
 gallery_path2: "/assets/img/portfolio/off-you-go/offyougoartworks/"
+=======
+
+gallery_path2: "/assets/img/portfolio/offyougo/offyougoartworks/"
+>>>>>>> Stashed changes
 gallery_altlink2: Artwork du court-métrage 
 gallery_titleimg2: Ouvrir les artworks du film
 ---
@@ -37,7 +42,7 @@ gallery_titleimg2: Ouvrir les artworks du film
 ## Pitch du projet :
 Un homme vantard et narcissique sonne chez une femme pour sortir. Il prend un peu trop ses aises. L'appartement et tout les objets qu'il contient finissent par se retourner contre lui. "Off You Go" est un court-métrage étudiant sur lequel je suis intervenu.
 
-{% include aligner.html gallery_path=page.gallery_path1 gallery_titlelink=page.gallery_titlelink1 gallery_altlink=page.gallery_altlink1 gallery_titleimg=page.gallery_titleimg1 gallery_altimg=page.gallery_altimg1 %}
+{% include aligner.html gallery_path=page.gallery_path1 gallery_titlelink=page.gallery_titlelink1 gallery_altlink=page.gallery_altlink1 %}
 
 ## Mon travail et mes réalisations dans le cadre de ce projet :
 Voici quelques images réalisées durant la phase de dévezloppement visuel du projet. Outre le développement visuel, je suis intervenu sur du modeling, texturing, lighting, FX, rendu, compositing.
